@@ -18,6 +18,7 @@ import micraAutoInt from '../assets/nissan-micra-auto-int.jpg'; // ou micraInt
 import p308Ext from '../assets/peugeot-308-ext.jpg';
 import p308Int from '../assets/peugeot-308-int.jpg';
 
+
 import p5008Ext from '../assets/peugeot-5008-ext.jpg';
 import p5008Int from '../assets/peugeot-5008-int.jpg';
 
@@ -91,16 +92,17 @@ export const automaticCars = [
     imageExterior: micraAutoExt || micraExt,
     imageInterior: micraAutoInt || micraInt,
   },
-  {
-    id: 7,
-    brand: 'Peugeot',
-    model: '308',
-    transmission: 'Automatique',
-    priceDay: 40,
-    priceWeekend: 55,
-    imageExterior: p308Ext,
-    imageInterior: p308Int,
-  },
+ {
+  id: 7,
+  brand: 'Peugeot',
+  model: '308',
+  transmission: 'Automatique',
+  priceDay: 40,
+  priceWeekend: 55,
+  imageExterior: p308Ext,   // ← extérieur
+  imageInterior: p308Int,   // ← intérieur
+},
+
   {
     id: 8,
     brand: 'Peugeot',
