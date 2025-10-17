@@ -112,6 +112,7 @@ body {
   transform: translateY(-4px);
 }
 
+/* Image "classique" (hors flip) */
 .car-card img {
   width: 100%;
   height: 200px;
@@ -289,4 +290,74 @@ body {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* ======================================================================== */
+/* ========================  FLIP EXTÉRIEUR / INTÉRIEUR  =================== */
+/* ======================================================================== */
+
+/* Bouton/zone interactive du flip */
+.flip {
+  all: unset;                  /* reset bouton */
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #f0f0f0; /* fine séparation visuelle */
+}
+.flip:focus-visible {
+  outline: 2px solid #8ab4f8;
+  outline-offset: 2px;
+}
+
+/* Conteneur 3D */
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 220px;               /* ajuste la hauteur si besoin */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* État retourné */
+.flip.is-flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Faces */
+.flip-face {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;                /* prendre toute la hauteur du conteneur */
+  object-fit: cover;
+  backface-visibility: hidden; /* masque l’envers lors de la rotation */
+  background: #f8f8f8;
+  display: block;
+}
+
+/* Neutralise la règle générique .car-card img sur les images du flip */
+.car-card .flip-face {
+  height: 100% !important;
+}
+
+/* Face arrière */
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+/* Indication (badge) dans l’angle bas-droit */
+.flip-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  pointer-events: none;
 }

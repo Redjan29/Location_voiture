@@ -1,3 +1,32 @@
+// ------- MANUELS -------
+import opelExt from '../assets/opel-corsa-ext.jpg';
+import opelInt from '../assets/opel-corsa-int.jpg';
+
+import yarisExt from '../assets/toyota-yaris-ext.jpg';
+import yarisInt from '../assets/toyota-yaris-int.jpg';
+
+import primeraExt from '../assets/nissan-primera-ext.jpg';
+import primeraInt from '../assets/nissan-primera-int.jpg';
+
+import micraExt from '../assets/nissan-micra-ext.jpg';
+import micraInt from '../assets/nissan-micra-int.jpg';
+
+// ------- AUTOMATIQUES -------
+import micraAutoExt from '../assets/nissan-micra-auto-ext.jpg'; // ou réutilise micraExt
+import micraAutoInt from '../assets/nissan-micra-auto-int.jpg'; // ou micraInt
+
+import p308Ext from '../assets/peugeot-308-ext.jpg';
+import p308Int from '../assets/peugeot-308-int.jpg';
+
+import p5008Ext from '../assets/peugeot-5008-ext.jpg';
+import p5008Int from '../assets/peugeot-5008-int.jpg';
+
+import p508Ext from '../assets/peugeot-508-ext.jpg';
+import p508Int from '../assets/peugeot-508-int.jpg';
+
+import clioExt from '../assets/renault-clio-ext.jpg';
+import clioInt from '../assets/renault-clio-int.jpg';
+
 export const manualCars = [
   {
     id: 1,
@@ -5,9 +34,9 @@ export const manualCars = [
     model: 'Corsa',
     transmission: 'Manuelle',
     priceDay: 35,
-    priceWeek: 45,
     priceWeekend: 45,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: opelExt,
+    imageInterior: opelInt,
   },
   {
     id: 2,
@@ -15,9 +44,9 @@ export const manualCars = [
     model: 'Corsa',
     transmission: 'Manuelle',
     priceDay: 35,
-    priceWeek: 45,
     priceWeekend: 45,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: opelExt,
+    imageInterior: opelInt,
   },
   {
     id: 3,
@@ -25,9 +54,9 @@ export const manualCars = [
     model: 'Yaris',
     transmission: 'Manuelle',
     priceDay: 35,
-    priceWeek: 45,
     priceWeekend: 45,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: yarisExt,
+    imageInterior: yarisInt,
   },
   {
     id: 4,
@@ -35,9 +64,9 @@ export const manualCars = [
     model: 'Primera',
     transmission: 'Manuelle',
     priceDay: 35,
-    priceWeek: 45,
     priceWeekend: 45,
-    image:'../assets/opel-corsa.jpg',
+    imageExterior: primeraExt,
+    imageInterior: primeraInt,
   },
   {
     id: 5,
@@ -45,9 +74,9 @@ export const manualCars = [
     model: 'Micra',
     transmission: 'Manuelle',
     priceDay: 35,
-    priceWeek: 45,
     priceWeekend: 45,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: micraExt,
+    imageInterior: micraInt,
   },
 ];
 
@@ -59,7 +88,8 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 40,
     priceWeekend: 50,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: micraAutoExt || micraExt,
+    imageInterior: micraAutoInt || micraInt,
   },
   {
     id: 7,
@@ -68,7 +98,8 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 40,
     priceWeekend: 55,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: p308Ext,
+    imageInterior: p308Int,
   },
   {
     id: 8,
@@ -77,7 +108,8 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 50,
     priceWeekend: 65,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: p5008Ext,
+    imageInterior: p5008Int,
   },
   {
     id: 9,
@@ -86,7 +118,8 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 50,
     priceWeekend: 60,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: p508Ext,
+    imageInterior: p508Int,
   },
   {
     id: 10,
@@ -95,6 +128,7 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 45,
     priceWeekend: 55,
-    image: '../assets/opel-corsa.jpg',
+    imageExterior: clioExt,
+    imageInterior: clioInt,
   },
 ];
