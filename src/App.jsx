@@ -52,8 +52,11 @@ export default function App() {
 
   <div className="alert alert-danger">
     <span className="alert-icon">🛡️</span>
-    Assurance incluse dans le prix. Franchise 250€ pour dégât simple &lt;2000€.
-    Franchise 1000€ si dégâts &gt;2000€.
+    <div>
+      <p>Assurance incluse dans le prix.</p>
+      <p>Franchise 250€ pour dégât simple &lt;2000€.</p>
+      <p>Franchise 1000€ si dégâts &gt;2000€.</p>
+    </div>
   </div>
 
   <p className="muted">Les prix peuvent varier selon saisons et durée de location.</p>

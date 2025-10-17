@@ -7,7 +7,7 @@ export const manualCars = [
     priceDay: 35,
     priceWeek: 45,
     priceWeekend: 45,
-    image: '/images/opel-corsa.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const manualCars = [
     priceDay: 35,
     priceWeek: 45,
     priceWeekend: 45,
-    image: '/images/opel-corsa2.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const manualCars = [
     priceDay: 35,
     priceWeek: 45,
     priceWeekend: 45,
-    image: '/images/toyota-yaris.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const manualCars = [
     priceDay: 35,
     priceWeek: 45,
     priceWeekend: 45,
-    image: '/images/nissan-primera.jpg',
+    image:'../assets/opel-corsa.jpg',
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const manualCars = [
     priceDay: 35,
     priceWeek: 45,
     priceWeekend: 45,
-    image: '/images/nissan-micra.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
 ];
 
@@ -59,7 +59,7 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 40,
     priceWeekend: 50,
-    image: '/images/nissan-micra-auto.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 40,
     priceWeekend: 55,
-    image: '/images/peugeot-308.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 50,
     priceWeekend: 65,
-    image: '/images/peugeot-5008.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 9,
@@ -86,7 +86,7 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 50,
     priceWeekend: 60,
-    image: '/images/peugeot-508.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
   {
     id: 10,
@@ -95,6 +95,6 @@ export const automaticCars = [
     transmission: 'Automatique',
     priceDay: 45,
     priceWeekend: 55,
-    image: '/images/renault-clio.jpg',
+    image: '../assets/opel-corsa.jpg',
   },
 ];
